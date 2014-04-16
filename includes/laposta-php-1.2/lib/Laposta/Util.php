@@ -17,6 +17,7 @@ class Laposta_Util {
 		curl_setopt($ch, CURLOPT_FRESH_CONNECT, true); 
 		curl_setopt($ch, CURLOPT_USERPWD, $api_key . ':');
 		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
 		if ($post) {
 			curl_setopt($ch, CURLOPT_POST, true);

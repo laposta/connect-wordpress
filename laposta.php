@@ -6,7 +6,7 @@
 Plugin Name: Laposta
 Plugin URI: http://laposta.nl/documentatie/wordpress.524.html
 Description: Laposta is programma waarmee je gemakkelijk en snel nieuwsbrieven kunt maken en versturen. Met deze plugin plaats je snel een aanmeldformulier op je website.
-Version: 0.4
+Version: 0.5
 Author: Laposta - Stijn van der Ree
 Author URI: http://laposta.nl/contact
 License: GPLv2 or later
