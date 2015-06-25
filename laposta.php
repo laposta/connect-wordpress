@@ -34,7 +34,7 @@ if ( !function_exists( 'add_action' ) ) {
 	exit;
 }
 
-define('LAPOSTA_VERSION', '0.7');
+define('LAPOSTA_VERSION', '0.8');
 define('LAPOSTA_PLUGIN_URL', plugin_dir_url( __FILE__ ));
 
 if (!class_exists('Laposta_Template')) { 

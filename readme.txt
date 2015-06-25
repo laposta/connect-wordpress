@@ -2,8 +2,8 @@
 Contributors: stijnvanderree
 Tags: laposta, nieuwsbrieven, aanmelden
 Requires at least: 3.0
-Tested up to: 4.1
-Stable tag: 0.7
+Tested up to: 4.2
+Stable tag: 0.8
 License: GPLv2 or later
 
 This plugin can be used to easily place a widget with a subscribe form for the
@@ -20,6 +20,10 @@ Unzip the file in the plugins directory, and activate the plugin in the
 Plugins screen. Then go to the Settings to setup the connection to Laposta.
 
 == Changelog ==
+
+= 0.8 =
+
+* Tested for wp-version 4.2
 
 = 0.7 =
 
