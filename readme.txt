@@ -21,6 +21,10 @@ Plugins screen. Then go to the Settings to setup the connection to Laposta.
 
 == Changelog ==
 
+= 1.2 =
+
+* Bugfix in settings template
+
 = 1.1 =
 
 * Tested for wp-version 4.6 and 4.7

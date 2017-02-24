@@ -170,7 +170,7 @@ $settings = new Laposta_Settings(array(
     <h2>Laposta instellingen</h2>
     <form method="post" action="options.php"> 
         <?php @settings_fields('laposta_template-group'); ?>
-        <?php @do_settings_fields('laposta_template-group'); ?>
+        <?php @do_settings_fields('laposta_template-group', 'default'); ?>
 
         <table class="form-table">  
 		<?php echo $settings->getHtmlTitle(); ?>
