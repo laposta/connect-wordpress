@@ -2,7 +2,7 @@
 Contributors: stijnvanderree
 Tags: laposta, nieuwsbrieven, aanmelden
 Requires at least: 3.0
-Tested up to: 4.7.2
+Tested up to: 4.9
 Stable tag: 1.0
 License: GPLv2 or later
 
@@ -20,6 +20,10 @@ Unzip the file in the plugins directory, and activate the plugin in the
 Plugins screen. Then go to the Settings to setup the connection to Laposta.
 
 == Changelog ==
+
+= 1.3 =
+
+* Tested for wp-version 4.8 and 4.9
 
 = 1.2 =
 
