@@ -155,7 +155,7 @@ class Laposta_Settings {
 		if ($this->status == 'invalid_api_key') return 'Dit is geen geldige api-key.';
 		if ($this->status == 'no_lists') return 'Geen lijsten gevonden.';
 
-		return 'Er is een onbekend probleem opgetreden.';
+		return 'Er is een onbekend probleem opgetreden. Mail deze foutmelding naar stijn@laposta.nl voor een oplossing.<br><pre>' . $this->status . '</pre>';
 	}
 }
 

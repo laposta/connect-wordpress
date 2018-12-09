@@ -21,6 +21,10 @@ Plugins screen. Then go to the Settings to setup the connection to Laposta.
 
 == Changelog ==
 
+= 1.4.1 =
+
+* Display debugging info if needed
+
 = 1.4 =
 
 * Tested for wp-version 5.0
