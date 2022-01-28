@@ -2,8 +2,8 @@
 Contributors: stijnvanderree
 Tags: laposta, nieuwsbrieven, aanmelden
 Requires at least: 3.0
-Tested up to: 5.7
-Stable tag: 1.0
+Tested up to: 5.9
+Stable tag: 1.9
 License: GPLv2 or later
 
 This plugin can be used to easily place a widget with a subscribe form for the
@@ -19,7 +19,18 @@ subscribeform to your WordPress blog.
 Unzip the file in the plugins directory, and activate the plugin in the
 Plugins screen. Then go to the Settings to setup the connection to Laposta.
 
+
+== Upgrade Notice ==
+
+= 1.9 =
+
+* Tested for wp-version 5.9
+
 == Changelog ==
+
+= 1.9 =
+
+* Tested for wp-version 5.9
 
 = 1.8 =
 
