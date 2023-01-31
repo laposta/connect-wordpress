@@ -3,13 +3,15 @@ Contributors: stijnvanderree
 Tags: laposta, nieuwsbrieven, aanmelden
 Requires at least: 3.0
 Tested up to: 6.1
-Stable tag: 1.11
+Stable tag: 1.12
 License: GPLv2 or later
 
 This plugin can be used to easily place a widget with a subscribe form for the
 Laposta newsletter software (https://laposta.nl).
 
 == Description ==
+
+Please note: support for this plugin will expire on February 1, 2024. Improved alternatives for this plugin are: "Laposta Signup Basic" and "Laposta Signup Embed".
 
 Laposta is a Dutch emailmarketing solution. Use this plugin to add a
 subscribeform to your WordPress blog.
@@ -22,11 +24,15 @@ Plugins screen. Then go to the Settings to setup the connection to Laposta.
 
 == Upgrade Notice ==
 
-= 1.11 =
+= 1.12 =
 
-* Tested for wp-version 6.1
+* Please note: support for this plugin will expire on February 1, 2024. Improved alternatives for this plugin are: "Laposta Signup Basic" and "Laposta Signup Embed".
 
 == Changelog ==
+
+= 1.12 =
+
+* Please note: support for this plugin will expire on February 1, 2024. Improved alternatives for this plugin are: "Laposta Signup Basic" and "Laposta Signup Embed".
 
 = 1.11 =
 

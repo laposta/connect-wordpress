@@ -5,8 +5,8 @@
 /*
 Plugin Name: Laposta
 Plugin URI: http://laposta.nl/documentatie/wordpress.524.html
-Description: Laposta is programma waarmee je gemakkelijk en snel nieuwsbrieven kunt maken en versturen. Met deze plugin plaats je snel een aanmeldformulier op je website.
-Version: 1.11
+Description: Let op: de ondersteuning van deze plugin vervalt per 1 februari 2024. Verbeterde alternatieven voor deze plugin zijn: "Laposta Signup Basic" en "Laposta Signup Embed". Laposta is programma waarmee je gemakkelijk en snel nieuwsbrieven kunt maken en versturen. Met deze plugin plaats je snel een aanmeldformulier op je website.
+Version: 1.12
 Author: Laposta - Stijn van der Ree
 Author URI: http://laposta.nl/contact
 License: GPLv2 or later
@@ -34,7 +34,7 @@ if ( !function_exists( 'add_action' ) ) {
 	exit;
 }
 
-define('LAPOSTA_VERSION', '1.11');
+define('LAPOSTA_VERSION', '1.12');
 define('LAPOSTA_PLUGIN_URL', plugin_dir_url( __FILE__ ));
 
 if (!class_exists('Laposta_Template')) { 
@@ -188,3 +188,32 @@ if (class_exists('Laposta_Widget')) {
 		register_widget('Laposta_Widget');
 	}
 }
+
+
+function laposta_drop_support_warning() {
+	?>
+	<div class="notice notice-error is-dismissible_ laposta-drop-support-warning">
+		<p>
+			Let op: de ondersteuning voor de plugin "Laposta" vervalt per 1 februari 2024. Verbeterde alternatieven voor deze plugin zijn: "Laposta Signup Basic" en "Laposta Signup Embed".
+			<a href="<?= admin_url().'?hide_drop_support_message' ?>">Verberg melding</a>
+		</p>
+		<p>
+			Please note: support for the plugin "Laposta" will expire on February 1, 2024. Improved alternatives for this plugin are: "Laposta Signup Basic" and "Laposta Signup Embed".
+			<a href="<?= admin_url().'?hide_drop_support_message' ?>">Hide notification</a>
+		</p>
+	</div>
+	<?php
+}
+
+function laposta_admin_init() {
+	$transientKey = 'laposta_drop_support_message';
+	if (!get_transient($transientKey)) {
+		if (isset($_GET['hide_drop_support_message'])) {
+			set_transient($transientKey, 1, 60*60*24*30);
+			wp_redirect(admin_url());
+		}
+
+		add_action( 'admin_notices', 'laposta_drop_support_warning' );
+	}
+}
+add_action('admin_init', 'laposta_admin_init');
